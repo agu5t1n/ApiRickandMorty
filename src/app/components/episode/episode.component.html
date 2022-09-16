@@ -1,0 +1,23 @@
+<div class="container">
+    <div><h2>Lista de Episodios</h2></div>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Nombre</th>
+            <th>Fecha de Estreno</th>
+            <th>Episodio</th>
+        </tr>
+        <tr *ngFor="let list of listEpisodes?.results">
+            <td>
+                {{list.name}}
+            </td>
+            <td>
+                {{list.air_date}}
+            </td>
+            <td>
+                {{list.episode}}
+            </td>
+        </tr>
+    </table>
+    <div class="card"><button class="btn btn-success" routerLink='/home'>Volver</button></div>
+</div>

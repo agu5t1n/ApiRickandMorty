@@ -1,0 +1,11 @@
+<div class="origen">
+    <div><h2> Bienvenidos a la Api de Rick And Morty</h2></div>
+    <div><h5>Agustin Verginelli</h5></div>
+    <div class="button"><app-login *ngIf="(auth.isAuthenticated$ | async) === false"></app-login></div>
+    <br>
+    <div class="button"><app-logout *ngIf="auth.isAuthenticated$ | async"></app-logout></div>
+    <br>
+    <div class="button"><button class="btn btn-success" routerLink='/episode'ß *ngIf="auth.isAuthenticated$ | async">Lista de Episodios</button></div>
+    <br>
+    <div class="button"><button class="btn btn-success" routerLink='/characters' *ngIf="auth.isAuthenticated$ | async">Lista de Personajes</button></div>
+</div>

@@ -1,0 +1,10 @@
+<div class="card"><button class="btn btn-success" routerLink='/home'>Volver</button></div>
+<div class="card" style="width: 18rem;" *ngFor="let list of Characters?.results">
+  <img class="card-img-top" src="{{list.image}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{list.name}}</h5>
+    <button routerLink='/detail/{{list.id}}' class="btn btn-primary">Ver
+      detalle</button>
+
+  </div>
+</div>
