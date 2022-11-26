@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/ParcialAgustin'),
+      dir: require('path').join(__dirname, './coverage/WebApiRickandMorty'),
       subdir: '.',
       reporters: [
         { type: 'html' },
